@@ -1,0 +1,14 @@
+/* This file was created by Kayden La */
+
+.clock{
+  font:  lighter;
+  color:#23dd50;
+  font-size: 10vw;
+  text-align: center;
+}
+.clock_padding{
+  padding-right: 50%;
+}
+.clock_background{
+    background-color:#f2f2f2
+}

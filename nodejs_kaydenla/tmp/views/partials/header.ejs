@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="dropdown d-lg-none">
+      <img src="https://kaydenla.com/assets/menu.png" onclick="myFunction()" class="dropbtn" width="30" alt="Menu Button">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="https://kaydenla.com">Home</a>
+        <a href="https://kaydenla.com/resume">Resume</a>
+        <a href="https://cis3368.kaydenla.com">CIS 3368 Projects</a>
+        <a href="https://kaydenla.com/htmlProjects">HTML Projects</a>
+        <a href="https://kaydenla.com/models">3D Models</a>
+        <a href="https://kaydenla.com/contact">Contact</a>
+      </div>
+    </div>
+    <a class="navbar-brand d-none d-lg-block" href="https://kaydenla.com">KL</a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="https://kaydenla.com/resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://cis3368.kaydenla.com">CIS 3368 Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://kaydenla.com/htmlProjects">HTML Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://kaydenla.com/models">3D Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://kaydenla.com/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  function myOnLoad() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>

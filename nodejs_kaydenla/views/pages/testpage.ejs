@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <title>Kayden La - Personal Website</title>
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="container my-5">
+      <!-- Components -->
+      <section class="">
+        <h1 class="text-center"><strong>3D Models</strong></h1>
+        <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/afc699c5-e6fe-46b7-354e-bee72cd4fe00/w=40" alt="Cluster of 3D printouts on top of a 3D printer" width="600">
+        <div class="desc">Painted Cluster (not my model)</div>
+
+        <img src="https://kaydenla.com/assets/models/prints.jpg" alt="Cluster of 3D printouts on top of a 3D printer" width="600">
+        <div class="desc">Painted Cluster (not my model)</div>
+
+      </section>
+      <%- include('../partials/footer'); %>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Kayden La - Personal Website",
+        "url": "https://kaydenla.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+    <title>Lab1 - About Page</title>
+    <link rel="icon" href="https://kaydenla.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kaydenla.com/assets/secondary.css">
+    <meta name="description" content="Demonstration of a responsive 'About Me' page on my personal website. A video presentation is embedded in a fluid way at the bottom of the page.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+  <div class="padding_container">
+    <div class="navbar">
+      <nav>
+        <ul id="menuList">
+          <li><a href="https://kaydenla.com/projects/lab2">Lab2</a></li>
+        </ul>
+      </nav>
+      <img src="https://kaydenla.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    <!-- ===== body ===== -->
+  	<div class="row row-cols-1 row-cols-md-2 mb-4">
+      <div class="col-lg-8">
+        <h1>Lab1</h1>
+        <div class="center">
+          About Me
+        </div>
+        <p>
+           &#8195;My name is <b>Kayden La</b>. I began taking college classes since Spring 2020. I officially graduated high school Fall of 2021. This is my second year at <b><i>The University of Houston</i></b>. I am majoring in <i>Computer Information Systems</i> (CIS). My interest in coding began at a very young age: I have always enjoyed the idea of design creation. During the year of 2016, I played a popular FPS game, Minecraft, that encouraged custom modding. That year I downloaded and heavily modded that game. However, it was only till the latter half of that year that I began developing my own mods.
+        </p>
+        <p>
+          &#8195;Thus, my coding experience began on the addition / customization of the Java based video game, <i>Minecraft</i>. Since my time working on Minecraft mods, I have thus tinkered with C++, SQL, Python, and HTML (in progress).
+        </p>
+        <p>
+          &#8195;I am currently studying for the CompTIA Security+ certification, which I will complete by the end of 2022. I will graduate Spring 2025. Currently, I am a sales consultant for Samsung INC. After Fall 2022 semester ends, I will apply to server administration jobs. For my future goals, I strive to become a network engineer.
+        </p>
+        <p>
+          To demonstrate the ability to provide responsive video, below is an embedded video of a presentation hosted on the website that I have done for a different project.
+        </p>
+        <p>
+          The following is a video demonstration of the Directory for Kayden's HTML Projects. Included is a responsive video embedding and profile picture.
+        </p>
+
+        <!-- ===== Embeded Media ===== -->
+        <div class="videoResponsive">
+          <div style="position: relative; padding-top: 56.25%;">
+            <iframe
+              src="https://customer-ehhn8jsydbzh9hgx.cloudflarestream.com/a216917040e8bee7784472acfc4e004d/iframe?defaultTextTrack=en&poster=https%3A%2F%2Fcustomer-ehhn8jsydbzh9hgx.cloudflarestream.com%2Fa216917040e8bee7784472acfc4e004d%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&primaryColor=%23000000"
+              style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          </video>
+        </div>  
+      </div>
+
+      <div class="col-lg-4">
+  			<br>
+        <br>
+        <img src="https://kaydenla.com/assets/kayden.jpg" class="img-fluid" title="Kayden L" alt="Kayden L">
+      </div>
+    </div> <!-- End of body -->
+
+    <!-- ===== Footer ===== -->
+    <%- include('../partials/footer'); %>
+    </div> <!-- End of padding -->
+
+  <!-- ===== Scripts ===== -->
+    <!-- Nav -->
+    <script src="https://kaydenla.com/assets/nav.js"></script>
+    <!-- Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://kaydenla.com/projects/lab1/"
+        },
+        "headline": "Lab1 - About Page",
+        "description": "Demonstration of a responsive 'About Me' page on my personal website. A video presentation is embedded in a fluid way at the bottom of the page.",
+        "image": "https://kaydenla.com/assets/kayden.jpg",  
+        "author": {
+          "@type": "Person",
+          "name": "Kayden La",
+          "url": "https://kaydenla.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2022-09-23"
+      }
+      </script>
+      <!-- BreadCrumb -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [{
+            "@type": "ListItem", 
+            "position": 1, 
+            "name": "Kayden La",
+            "item": "https://kaydenla.com/"  
+          },{
+            "@type": "ListItem", 
+            "position": 2, 
+            "name": "HTMLProjects",
+            "item": "https://kaydenla.com/projects/"  
+          },{
+            "@type": "ListItem", 
+            "position": 3, 
+            "name": "Lab1",
+            "item": "https://kaydenla.com/projects/lab1/"  
+          }]
+        }
+        </script>
+        <!-- video object schema-->
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org/",
+            "@type": "VideoObject",
+            "name": "HTML Project Introduction | Lab1",
+            "description": "Demonstration of the Directory for Kayden's HTML Projects. Included is a responsive video embedding and profile picture.",
+            "thumbnailUrl": "https://kaydenla.com/assets/presentationthumbnail.png",
+            "uploadDate": "2023-05-10T06:00:00.000Z",
+            "contentUrl": "https://kaydenla.com/assets/htmlprojectspresentation.m4v",
+            "duration": "1:46",
+            "hasPart": {
+              "@type": "Clip"
+            },
+            "expires": "",
+            "publication": {
+              "@type": "BroadcastEvent",
+              "isLiveBroadcast": "No",
+              "startDate": "2023-05-10T06:00:00.000Z",
+              "endDate": "2023-05-10T06:00:00.000Z"
+            },
+            "videoQuality": ""
+          }
+          </script>
+</html>

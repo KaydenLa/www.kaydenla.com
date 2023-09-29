@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="canonical" href="https://kaydenla.com/cis3355" />
+    <title>Mapbox Demo - Kayden La</title>
+    <meta name="description" content="Proffesional Resume. Work history, education, objective, and proffesional links are included.">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+
+    <div class="container my-5">
+      <h1>IC 16 (Local host only)</h1>
+      <!-- Components -->
+      <section class="">
+
+        <iframe src="/mapbox" title="Mapbox iframe" width="1200" height="700"></iframe>
+       <!-- end of mapbox -->
+      </section>
+    </div>
+    <script>
+      mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });
+    </script>
+s    
+  </body>
+</html>

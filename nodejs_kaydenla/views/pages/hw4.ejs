@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/header'); %>
+    <%- include('../partials/head'); %>
+    <title>HW4 CIS3368</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <!-- Components -->
+      <section class="">
+        <!--Subsection: Three images -->
+        <section id="demo" class="">
+          <h3 class="text-center"><strong>Three Images</strong></h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="bg-image hover-zoom hover-shadow rounded">
+                <img src="https://kaydenla.com/CIS3368/assets/origional.jpg" class="img-fluid" alt="Portait">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="bg-image hover-zoom hover-shadow rounded">
+                <img src="https://kaydenla.com/CIS3368/assets/dalletie.png" class="img-fluid" alt="Edited portrait">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="bg-image hover-zoom hover-shadow rounded">
+                <img src="https://kaydenla.com/CIS3368/assets/cat.jpg" class="img-fluid" alt="Cat">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-5" />
+
+        <!--Subsection: Support form-->
+        <section>
+          <div class="text-center">
+            <h4><strong>Support Form</strong></h4>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <section class="shadow-5 p-4">
+                <form>
+                  <!-- first / last name input. 2 col -->
+                  <div class="row mb-">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="form6Example1" class="form-control">
+                        <label class="form-label" for="form6Example1" style="margin-left: 0px">First name</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 68.8px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 68.8px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="form6Example2" class="form-control" autocomplete="off">
+                        <label class="form-label" for="form6Example2" style="margin-left: 0px">Last name</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 68px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 68px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" class="form-control" autocomplete="off">
+                    <label class="form-label" for="email" style="margin-left: 0px">Email</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px"></div>
+                      <div class="form-notch-middle" style="width: 40px"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px"></div>
+                      <div class="form-notch-middle" style="width: 40px"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+
+                  <!-- Pledge input -->
+                  <div class="form-outline mb-4">
+                    <input type="number" id="pledge" class="form-control" autocomplete="off">
+                    <label class="form-label" for="pledge" style="margin-left: 0px">Pledge Amount</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px"></div>
+                      <div class="form-notch-middle" style="width: 40px"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px"></div>
+                      <div class="form-notch-middle" style="width: 40px"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div>
+
+                   <!-- CC input fields -->
+                   <div>
+                    <div class="form-outline mb-4">
+                      <input type="text" id="formNameOnCard" class="form-control">
+                      <label class="form-label" for="formNameOnCard" style="margin-left: 0px">Name on Card</label>
+                      <div class="form-notch">
+                        <div class="form-notch-leading" style="width: 9px"></div>
+                        <div class="form-notch-middle" style="width: 40px"></div>
+                        <div class="form-notch-trailing"></div>
+                      </div>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="text" id="formCardNumber" class="form-control">
+                      <label class="form-label" for="formCardNumber" style="margin-left: 0px">Credit Card Number</label>
+                      <div class="form-notch">
+                        <div class="form-notch-leading" style="width: 9px"></div>
+                        <div class="form-notch-middle" style="width: 40px"></div>
+                        <div class="form-notch-trailing"></div>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-4">
+                        <div class="form-outline">
+                          <input type="text" id="formExpiration" class="form-control">
+                          <label class="form-label" for="formExpiration" style="margin-left: 0px">Expiration</label>
+                          <div class="form-notch">
+                            <div class="form-notch-leading" style="width: 9px"></div>
+                            <div class="form-notch-middle" style="width: 40px"></div>
+                            <div class="form-notch-trailing"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 form-outline">
+                        <input type="text" id="formCVV" class="form-control">
+                        <label class="form-label" for="formCVV" style="margin-left: 0px">CCV</label>
+                        <div class="form-notch">
+                          <div class="form-notch-leading" style="width: 9px"></div>
+                          <div class="form-notch-middle" style="width: 40px"></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- dropdown credit card brand box -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="formPaymentType" style="margin-left: 0px">Payment Type:</label>
+                    <select name="formPaymentType" id="formPaymentType">
+                      <option value="volvo">Mastercard</option>
+                      <option value="saab">Visa</option>
+                      <option value="mercedes">American Express</option>
+                    </select>
+                  </div>
+
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Submit Support Form
+                  </button>
+                </form>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <hr class="my-5" />
+
+        <!--Subsection: Event information -->
+        <section id="demo" class="">
+            <div class="card bg-dark text-white shadow-1-strong">
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(55).jpg" class="card-img" alt="Background image">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Event Information</h5>
+                <p class="card-text">
+                  This event and this team develops webpages for webusers for companies. This will now be latin example text regarding our team. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+        </section>
+      </section>
+      <%- include('../partials/footer'); %>
+    </div>
+  </body>
+</html>

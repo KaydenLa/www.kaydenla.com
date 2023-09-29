@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="canonical" href="https://kaydenla.com/models" />
+    <title>3D Print Model Gallery</title>
+    <style>      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 33.33%;
+      }
+      .table-color{
+        background-color: #424242;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+
+    <meta name="description" content="Gallery of 3D printouts that were completed and painted by Kayden.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="container my-5">
+      <!-- Components -->
+      <section class="">
+        <h1 class="text-center"><strong>3D Models</strong></h1>
+        <!-- CSS PHOTO GALLERY -->
+        <div class="table-clear">
+          <div class="responsive">
+            <div class="table-color">
+              <div class="gallery">
+                  <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/afc699c5-e6fe-46b7-354e-bee72cd4fe00/w=600" alt="Cluster of 3D printouts on top of a 3D printer" width="600" height="400">
+                <div class="desc">Painted Cluster (not my model)</div>
+              </div>
+            </div>
+
+          </div>
+    
+          <div class="responsive">
+            <div class="table-color">
+              <div class="gallery">
+                  <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/2d35b118-fc12-442f-e6ba-f27e14bb3400/w=600" alt="Mini pool chair with blue backing" width="600" height="400">
+                <div class="desc">Pool chair  (my model)</div>
+              </div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="table-color">
+              <div class="gallery">
+                  <img src="https://imagedelivery.net/UM7D0Nco8iEpdCrVzQrsNg/d22bca41-1721-4701-3db7-77688d7b6a00/w=600" alt="Snake and mouse painted black and violet" width="600" height="400">
+                <div class="desc">Painted snake (not my model)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of photo gallery -->
+      <%- include('../partials/footer'); %>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/", 
+        "@type": "BreadcrumbList", 
+        "itemListElement": [{
+          "@type": "ListItem", 
+          "position": 1, 
+          "name": "Kayden La",
+          "item": "https://kaydenla.com/"  
+        },{
+          "@type": "ListItem", 
+          "position": 2, 
+          "name": "3D Model Gallery",
+          "item": "https://kaydenla.com/models"  
+        }]
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+        Owner: Kayden La
+        Class: CIS 3368
+        Date: 03/30/2023
+    -->
+
+<head>
+    <title>HW3 KL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--
+        Header to other pages not present as this is a one page assignment. 
+        Could make this with responsive CSS,
+        but that is not the focus, and would make code hard to follow 
+    -->
+</head>
+
+<body onload="hideFunction()">
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1>Welcome to random user from API</h1>
+    </div>
+    
+    <div class="jumbotron">
+        <label>Click load to list random users and their workplace</label><br>
+        <!-- button to reveal 3 random users retrievered from API.
+            Once clicked, a checkbox to sort by last name will appear -->
+        <button onclick="myFunction()" id="button1">Load</button><br>
+        <label for="checkbox" id="label1"><b>Sort Alphabetically</label>
+        <input type="checkbox" id="checkbox1" onclick="myCheckbox()">
+        <!-- string within subtitle1 changes depanding on checkbox check status -->
+        <p id="subtitle1">Pseudo random - No organization </p>
+
+        <!-- data gathered from API and processesed on the backend using EJS -->
+        <ul id="demo1">
+            <% num = []
+                for(var i=0; i < loops; i++) { %>
+                <div>
+                    <% num[i] = Math.floor(Math.random() * users.length) %>
+                    <b>Name: <%= users[num[i]]['name'] %></b><br>
+                    <b>City: <%= users[num[i]]['address']['city'] %></b><br>
+                    <b>Company: <%= users[num[i]]['company']['name'] %></b><br><br>  
+                </div>
+            <% }; %>
+        </ul>
+        <!--Using same 3 random IDs as gathered from EJS above, EJS will now sort by lastname -->
+        <ul id="demo2">
+            <% num.sort(function (a,b){
+                //ensures that the last name is being sorted, not the middle
+                a_Val = users[a]['name'].split(" ");
+                b_Val = users[b]['name'].split(" ");
+                a_Last = a_Val[a_Val.length-1];
+                b_Last =  b_Val[b_Val.length-1];
+                
+                if (a_Last < b_Last) {
+                    return -1;
+                }
+                if (a_Last > b_Last) {
+                    return 1;
+                 }
+                return 0;
+            }) 
+            %>
+            <% for(var i=0; i < loops; i++) { %>
+                <div>
+                    <b>Name: <%= users[num[i]]['name'] %></b><br>
+                    <b>City: <%= users[num[i]]['address']['city'] %></b><br>
+                    <b>Company: <%= users[num[i]]['company']['name'] %></b><br><br>  
+                </div>
+            <% }; %>
+        </ul>
+    </div>
+</body>
+<script>
+    function hideFunction(){
+        //onload function that hides elements until needed / requested
+        document.getElementById("demo1").style.display = "none";
+        document.getElementById("demo2").style.display = "none";
+        document.getElementById("subtitle1").style.display = "none";
+        document.getElementById("label1").style.display = "none";
+        document.getElementById("checkbox1").style.display = "none";
+    }
+
+    function myCheckbox(){ 
+
+        //checkbox function that shows correct elements dependant on checkbox status
+        var checkBox = document.getElementById("checkbox1");
+
+        if (checkBox.checked == true){
+            document.getElementById("demo1").style.display = "none";   
+            document.getElementById("demo2").style.display = "block";
+            document.getElementById("subtitle1").innerHTML = "Pseudo random - Organized by Last name"
+    } else {
+            document.getElementById("demo1").style.display = "block";   
+            document.getElementById("demo2").style.display = "none";
+            document.getElementById("subtitle1").innerHTML = "Pseudo random - No organization"
+    }
+        
+    }
+    function myFunction(){    
+        //supports the 'load' button by showing element on first click and reloading on second click to get 3 new random users
+        if (typeof i !== 'undefined'){
+            window.location.reload();
+        }
+        if (typeof i == 'undefined'){
+            document.getElementById("demo1").style.display = "block";
+            document.getElementById("subtitle1").style.display = "block";
+            document.getElementById("label1").style.display = "block";
+            document.getElementById("checkbox1").style.display = "block";
+            //change button1 text to say reload instead of load
+            document.getElementById("button1").innerHTML = "Reload";
+            //create i, so that the first if is triggered upon next click
+            i = 1;
+        }
+    }
+</script>

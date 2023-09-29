@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <title>CompTia A+ Common Ports - Exam 220-1001</title>
+    <meta name="description" content="Common required ports for CompTIA+ Exam 220-1001. HTTP : 80, SSH : 22, FTP, Telnet | 23. ...">
+    <link rel="stylesheet" href="https://kaydenla.com/assets/dark-table.css">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="container my-5">
+      <h1>Most Important Ports</h1>
+      <!-- Components -->
+      <section class="">
+        The CompTIA A+ exam requires technicians to be familiar with common ports and their related usage. Memorizing these ports before taking the exam is a quick way to improve testing results. Below is a tabulation of the ports called for by the exam objectives. <br><br>
+        <h1>Objective 2.1 of <i>CompTia A+ exam 220-1001 A+</i></h1> <br>
+        <h2><i>“Compare and contrast TCP and UDP ports, protocols, and their purpose"</i></h2><br>
+      </section>
+      <section>
+        <table>
+          <tr>
+            <th>Ports</th>
+            <th>Usage</th>
+            <th>Definition</th>
+          </tr>
+          <tr>
+            <td>TCP 20</td>
+            <td>FTP (File Transfer Protocol) Data Channel</td>
+            <td>Transfering files across computers</td>
+          </tr>
+          <tr>
+            <td>TCP 21</td>
+            <td>FTP (File Transfer Protocol) Control Channel</td>
+            <td>Transfering files across computers</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>SSH (Secure Shell)</td>
+            <td>Secure log in and access of remote machines</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Telnet</td>
+            <td>Remote seasion log in and access. Provides authentication but no encryption. Superseded by SSH.</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>SMTP (Simple Mail Transfer Protocol)</td>
+            <td>E-mail sending. Differs from POP3 and IMAP as it deals with out-going messages rather than incoming.</td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>DNS (Domain Name System)</td>
+            <td>Hierarchical distributed naming system for IP addresses</td>
+          </tr>
+          <tr>
+            <td>UDP 67</td>
+            <td>DHCP Server-side (Dynamic Host Configuration Protocol)</td>
+            <td>Dynamic assignment of IP addresses</td>
+          </tr>
+          <tr>
+            <td>UDP 68</td>
+            <td>DHCP Client-side (Dynamic Host Configuration Protocol)</td>
+            <td>Dynamic assignment of IP addresses</td>
+          </tr>
+          <tr>
+            <td>80</td>
+            <td>HTTP (Hyper Text Transfer Protocol)</td>
+            <td>Load webpages using hypertext links. Superseded by HTTPS</td>
+          </tr>
+          <tr>
+          <td>110</td>
+          <td>POP3 (Post Office Protocol 3)</td>
+          <td>E-mail retrieval. Deletes messages from server upon retrieval. Fees up server space by keeping files on single client.</td>
+          </tr>
+          <tr>
+            <td>137,138,139</td>
+            <td>NetBios/NetBT (Network Basic Input/Output System)</td>
+            <td>Legacy protocol that enables applications on separate computers to communicate without internet over a LAN. This service is non-routable and generally connects to a WINS <i>(Windows Internet Naming Service)</i> Server </td>
+            </tr>
+          <tr>
+          <td>143</td>
+          <td>IMAP (Internet Message Access Protocol)</td>
+          <td>E-mail retrieval. Does not delete from server. Frees up client storage by keeping file on the server.</td>
+          </tr>
+          <tr>
+          <td>TCP 443</td>
+          <td>HTTPS (Hypertext Transfer Protocol Secure)</td>
+          <td>Secure way to access webpages. Proceeeds HTTP.</td>
+          </tr>
+          <tr>
+          <td>TCP 445</td>
+          <td>SMP/CIFS<br>(Server Message Block)<br>(Common Internet File System)</td>
+          <td>Network file sharing protocol created by Microsoft.<br>CIFS is a dialect of SMB.</td>
+          </tr>
+          <tr>
+          <td>427</td>
+          <td>SLP (Service Location Protocol)</td>
+          <td>Enables finding of services in a LAN without prior configuration.</td>
+          </tr>
+          <tr>
+          <td>584</td>
+          <td>AFP (Apple Filing Protocol)</td>
+          <td>Proprietary protocol for file services of macOS.</td>
+          </tr>
+          <tr>
+          <td>TCP 389</td>
+          <td>LDAP (Lightweight Directory Access Protocol and Dynamic Host Configuration Protocol)</td>
+          <td>Protocol for accessing and maintaining distributed directory information services over IP.</td>
+          </tr>
+          <tr>
+            <td>UDP 161</td>
+            <td>SNMP <i>Simple Network Management Protocol</i></td>
+            <td>Agent listens here. SNMP Mangement sends here.<br>Enables collection, organization, and configuration changes of infromation from managed IP devices.<br>162 is a complimentary port</td>
+            </tr>
+          <tr>
+          <td>UDP 162</td>
+          <td>SNMP <i>Simple Network Management Protocol</i></td>
+          <td>Used for TRAPS and INFORM notifion messages.<br>Agent sends and mangement receives.<br>Main port is 161.</td>
+          </tr>
+          <tr>
+            <td>TCP 3389</td>
+            <td>RDP (Remote Desktop Protocol)</td>
+            <td>Proprietary Microsoft protocol for remotely accessing a computer.</td>
+            </tr>
+        </table>        
+      </section>
+      <%- include('../partials/footer'); %>
+    </div>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [{
+            "@type": "ListItem", 
+            "position": 1, 
+            "name": "Kayden La",
+            "item": "https://kaydenla.com/"  
+          },{
+            "@type": "ListItem", 
+            "position": 2, 
+            "name": "CompTia A+ Common Ports",
+            "item": "https://kaydenla.com/common-ports"  
+          }]
+        }
+        </script>
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org/",
+            "@type": "Article",
+            "author": [
+              {
+                "@type": "Person",
+                "name": "Kayden La",
+                "url": "https://kaydenla.com"
+              }
+            ],
+            "headline": "ComptTIA A+ Common Ports to Study",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://kaydenla.com/assets/common-ports.png"
+            },
+            "datePublished": "2023-08-01T02:27:10.000Z",
+            "publisher": {
+              "@type": "Organization",
+              "name": "KaydenLa.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://kaydenla.com/assets/favicon.ico"
+              }
+            },
+            "keywords": [
+              "Common Internet Ports",
+              "CompTIA A+ Ports"
+            ],
+            "dateModified": "2023-08-02T02:27:10.000Z",
+            "description": "Common required ports for CompTIA+ Exam 220-1001. HTTP : 80, SSH : 22, FTP, Telnet | 23. ..."
+          }
+          </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="canonical" href="https://kaydenla.com/monthly-power-consumption" />
+    <title>Monthly Power Consumption Calculator</title>
+    <meta name="description" content="Calculator that converts idle wattage power usage to monthly usage. Recommended use-case is for idle / average server equipment usage. Cost per KW is variable.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="container my-5">
+      <h1>Monthly Power Consumption Calculator</h1>
+      <!-- Components -->
+      <section class="">
+        <form action="https://kaydenla.com/monthly-power-consumption.php" method="post" enctype="multipart/form-data" target="hiddenFrame">
+          <label for="usage">Average Wattage:</label>
+          <input type="text" id="usage" name="usage"><br>
+          <label for="hours">Usage per day:</label>
+          <input type="text" id="hours" name="hours"><br>
+          <label for="cost">Cost per KW:</label>
+          <input type="text" id="cost" name="cost"><br>
+
+          <input type="submit" value="Calculate" onclick="calculate()">
+        </form>
+        <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+        <div id="changeme"></div>
+      </section>
+      <%- include('../partials/footer'); %>
+    </div>
+    <script>
+      const xhr = new XMLHttpRequest();
+      const changeme = document.getElementById('changeme');
+      function calculate(){
+          xhr.onload = function(){
+          changeme.innerHTML = xhr.responseText;
+        };
+
+        xhr.open('get', 'https://kaydenla.com/monthly-power-consumption.php');
+        xhr.send();
+        }
+      </script>
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [{
+            "@type": "ListItem", 
+            "position": 1, 
+            "name": "Kayden La",
+            "item": "https://kaydenla.com/"  
+          },{
+            "@type": "ListItem", 
+            "position": 2, 
+            "name": "Resume",
+            "item": "https://kaydenla.com/monthly-power-consumption"  
+          }]
+        }
+        </script>
+  </body>
+</html>

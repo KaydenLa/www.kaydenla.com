@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--Kayden La -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KL Lab 7</title>
+    <link rel="icon" href="https://kala.heyuhnem.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kala.heyuhnem.com/assets/secondary.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="padding_container">
+      <!-- ===== Nav header ===== -->
+      <div class="t_banner navbar">
+        <div class="t_title1">
+          Lab7 · Kayden L - Computer Information Systems
+        </div>
+        <div class="t_title2" id="t_title2">
+          Lab7 · KL
+        </div>
+        <nav>
+          <ul id="menuList">
+            <li><a href="https://kala.heyuhnem.com/">Home</a></li>
+            <li><a href="https://kala.heyuhnem.com/LABS/">Lab Directory</a></li>
+            <li><a href="https://kala.heyuhnem.com/LABS/Lab6/">Lab6</a></li>
+            <li><a href="https://kala.heyuhnem.com/LABS/Lab8">Lab8</a></li>
+          </ul>
+        </nav>
+        <img src="https://kala.heyuhnem.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+      <!-- Title -->
+      <div class="center">
+        HTML Form POST
+      </div>
+
+      <!-- Paragraph-->
+      <div class="right margin_small" style="background-color: #ffffdc;">
+        <h2>. . . Lab 7 Description</h2>
+        &#8195;This lab demonstrates basic usage of HTML forms.<br>
+        This lab uses the POST inside of the HTML form field in order to push the given user responses to the an external <i>.php</i> website.
+        This, of course has many use cases and objectives.
+        For starters, this is useful as a request page.
+        This page demonstrates a page where users fill out a form where appointment requests are made.<br>
+        One will notice that this page also demonstrates the usage of several other commonly found form functions.
+        The usage of declaring the <i>type</i> of input inside the input fields enables the usage of system-specific feilds.
+        The <i>time</i> type appears differently based on operating system / web browser features.
+        This can enrich the webpage without adding excess load-time / bandwidth.
+      </div>
+      <!-- Form - Creation and directing to https://ron.viseh.com/CIS2336/MyNotes/Chapter05/process.php -->
+    <h2>Request an Appointment</h2>
+    <div>
+      <form action="https://ron.viseh.com/CIS2336/MyNotes/Chapter05/process.php" method="post">
+
+        <label><i>Contact Information</i></label><br>
+        <input type="text" id="name" name="name" autofocus placeholder="name"><br><br>
+
+        <input type="text" id="email" name="email" placeholder="email*" required><br><br>
+        <input type="text" id="tel-national" name="phone" placeholder="phone"><br><br>
+
+        <label><i>Appointment Time</i></label><br>
+
+        <input type="date" id="date" name="date"><br><br>
+
+        <input type="time" id="time" name="time"><br><br>
+
+        <input type="text" id="message" name="message" placeholder="message*" required><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+      <!-- ===== Footer ===== -->
+      <footer class="py-5">
+        <div class="row">
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>
+              This page was made by Kayden La.<br>
+              <strong>© <script src="https://kala.heyuhnem.com/assets/year.js"></script> University of Houston</strong>.<br>
+              <a href="https://www.flaticon.com/free-icons/burger" title="burger icons">Burger icons created by Andy Horvath - Flaticon</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- End Padding -->
+
+    <!-- ===== Scripts ===== -->
+      <!-- Nav -->
+      <script src="https://kala.heyuhnem.com/assets/nav.js"></script>
+      <!-- get_extension -->
+      <script src="https://kala.heyuhnem.com/LABS/Lab5/get_extension.js"></script>
+  </body>
+</html>

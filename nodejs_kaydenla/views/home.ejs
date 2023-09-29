@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/header'); %>
+    <%- include('../partials/head'); %>
+    <title>Kayden La</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <!-- Components -->
+      <section class="">
+        <h3 class="text-center"><strong>Welcome to my Personal Website</strong></h3>
+        <p>
+          Hi, my name is Kayden and I study Computer Information Systems at the University of Houston.<br>
+          This website documents the projects I've done and my accompanying interests.
+        </p>
+        <!--Subsection: Three images -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Front End</h5>
+            <p class="card-text">
+              Developed with EJS, Node JS, JavaScript, HTML, and PHP<br>
+              Bootstrap themes are utalized, with the occasional custom CSS additions.
+            </p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Back End</h5>
+            <p class="card-text">
+              Developed using Flask, Python, and SQL.<br>
+              To load in external sources, Axios is used with EJS.<br>
+              To connect to SQL, sql-connector is used with Flask.<br>
+              The server itself is hosted on A2Hosting, DNS by Google Domains, SSL by AutoSSL, and CDN by CloudFlare 
+            </p>
+          </div>
+        </div>
+        </section>
+      <%- include('../partials/footer'); %>
+    </div>
+  </body>
+</html>

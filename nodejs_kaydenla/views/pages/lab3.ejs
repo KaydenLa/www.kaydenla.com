@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+    <title>Lab3 - Current Time</title>
+    <link rel="icon" href="https://kaydenla.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kaydenla.com/assets/secondary.css">
+    <meta name="description" content="A personal webclock that is made using JavaScript and HTML.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+  <div class="padding_container">
+    <div class="navbar">
+      <nav>
+        <ul id="menuList">
+          <li><a href="https://kaydenla.com/projects/lab2">Lab2</a></li>
+          <li><a href="https://kaydenla.com/projects/lab4">Lab4</a></li>
+        </ul>
+      </nav>
+      <img src="https://kaydenla.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+      <!-- Title -->
+      <h1>Lab3</h1>
+      <div class="center">
+        Current Time
+      </div>
+
+      <!-- Call time scripts -->
+      <div class="right">
+        <h3 id="display_day">.</h3>
+        <h3 id="display_time">.</h3>
+      </div>
+
+      <!-- Paragraph-->
+      <div>
+        <p>
+          &#8195;The code on this webpage displays the current day of the week and the time that the browser loaded the webpage.
+          It is important to note that the client performed the JavaScript on this webpage. In other words, the time that the webpage is displayed is dependent on the client's time.
+          The browser displays the time the JavaScript found from the client's time settings. In other words, the time displayed relies upon the time settings of the client machine.
+          This script has several real-world applications:
+        </p>
+        <div class="margin_small">
+          <p>
+            &#8195;<u><b>Firstly</b></u>, the day of the week lets the user know what day it is.
+            This is useful to the user. However, more importantly, this information can be extended to secondary scripts.
+            For example, if it is Wednesday, a website could highlight the office hours for Wednesday.
+          </p>
+          <p>
+            &#8195;<u><b>Secondly</b></u>,The current date is also useful.
+            A simple JavaScript could tell the user:
+          </p>
+          <div class="margin_small">
+            <b>a)</b> How many days are left until an assignment is due.<br>
+            <b>b)</b> It could tell the user many days until an event occurs.<br>
+            <b>c)</b> If today is the user's birthday. Or,<br>
+            <b>d)</b> There are many other applications.
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Footer ===== -->
+      <%- include('../partials/footer'); %>
+      </div> <!-- End of padding -->
+
+    <!-- ===== Scripts ===== -->
+      <!-- Nav -->
+      <script src="https://kaydenla.com/assets/nav.js"></script>
+      <!-- Time  -->
+      <script src="https://kaydenla.com/assets/time.js"></script>
+      <!-- Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://kaydenla.com/projects/lab3/"
+        },
+        "headline": "Lab3 - Current Time",
+        "description": "A personal webclock that is made using JavaScript and HTML",
+        "image": "",  
+        "author": {
+          "@type": "Person",
+          "name": "Kayden La",
+          "url": "https://kaydenla.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2022-09-29"
+      }
+      </script>
+            <!-- BreadCrumb -->
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org/", 
+                "@type": "BreadcrumbList", 
+                "itemListElement": [{
+                  "@type": "ListItem", 
+                  "position": 1, 
+                  "name": "Kayden La",
+                  "item": "https://kaydenla.com/"  
+                },{
+                  "@type": "ListItem", 
+                  "position": 2, 
+                  "name": "HTMLProjects",
+                  "item": "https://kaydenla.com/projects/"  
+                },{
+                  "@type": "ListItem", 
+                  "position": 3, 
+                  "name": "Lab3",
+                  "item": "https://kaydenla.com/projects/lab3/"  
+                }]
+              }
+              </script>
+      
+
+  </body>
+</html>

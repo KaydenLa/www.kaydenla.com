@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+    <title>Lab8 - Password Reset JQuery</title>
+    <link rel="icon" href="https://kaydenla.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kaydenla.com/assets/secondary.css">
+    <meta name="description" content="A password reset page that uses Jquery to perform string matching.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+  <div class="padding_container">
+    <div class="navbar">
+      <nav>
+        <ul id="menuList">
+          <li><a href="https://kaydenla.com/projects/lab7">Lab7</a></li>
+          <li><a href="https://kaydenla.com/projects/lab9">Lab9</a></li>
+        </ul>
+      </nav>
+      <img src="https://kaydenla.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+    </div>
+      <!-- Title -->
+      <h1>Lab8</h1>
+      <div class="center">
+        JQuery String Matching
+      </div>
+
+      <!-- Paragraph-->
+      <div class="right margin_small" style="background-color: #ffffdc;">
+        <h2>. . . Lab 8 Description</h2>
+              &#8195;Welcome to Kayden’s Lab 8.<br> This lab meets deliverables in the form of <i>Create/Change/ Password</i> page.
+              The password verification is done through the use of JavaScript string-matching.
+              To make the code easier to condensed, the script was written in JQuery.<br>
+              It is important to note that password verification is the deliverable here.
+              Password complexity requirements are added to enhance the deliverable.<br>
+              It is <b>heavily</b> noted that this is only the bare-bones form of a functioning page to set a password.
+              It is highly recommended that extra encryption be done on top of HTTPS encryption.
+              This is to prevent sniffers from accessing clear-text, assuming that they break through the session ID.<br>
+              <b>P.S.</b>The JQuery code and the HTML form code are slightly redundant.
+              This is to maximize compatiability for devices running without JavaScript support.
+      </div>
+    <!-- Delivertables: Lab 8  -->
+    <h2>Change Password</h2>
+    <div>
+      <form action="https://ron.viseh.com/CIS2336/MyNotes/Chapter05/process.php" method="post">
+        <input type="text" name="Username" placeholder="Username" id="Username" minlength="4" autofocus required><br><br>
+        <input type="password" name="Password" placeholder="Passworrd" id="password" minlength="6" required><br><br>
+        <input type="password" name="Password_verification" placeholder="Verify password" id="password_verification" required><br><br>
+        <button type="button" name="verify" class="btn btn-primary" id="verify_password">Verify Password</button>
+        <button type="submit" name="submit_form" id="submit_form">submit form</button>
+        <p class="margin_small form_error" id=password_status>No Script: password matching unable to run</p>
+      </form>
+    </div>
+
+      <!-- ===== Footer ===== -->
+      <%- include('../partials/footer'); %>
+      </div> <!-- End of padding -->
+
+    <!-- ===== Scripts ===== -->
+      <!-- JQuery CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <!-- Nav -->
+      <script src="https://kaydenla.com/assets/nav.js"></script>
+
+      <!-- Password / username verification | REQ: JQuery -->
+      <script src="https://kaydenla.com/assets/test.js"></script>
+      <!-- Markup -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kaydenla.com/projects/lab8/"
+          },
+          "headline": "Lab8 - Password Reset JQuery",
+          "description": "A password reset page that uses Jquery to perform string matching.",
+          "image": "",  
+          "author": {
+            "@type": "Person",
+            "name": "Kayden La",
+            "url": "https://kaydenla.com/"
+          },  
+          "publisher": {
+            "@type": "Organization",
+            "name": "",
+            "logo": {
+              "@type": "ImageObject",
+              "url": ""
+            }
+          },
+          "datePublished": "2022-11-11"
+        }
+        </script>
+              <!-- BreadCrumb -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [{
+            "@type": "ListItem", 
+            "position": 1, 
+            "name": "Kayden La",
+            "item": "https://kaydenla.com/"  
+          },{
+            "@type": "ListItem", 
+            "position": 2, 
+            "name": "HTMLProjects",
+            "item": "https://kaydenla.com/projects/"  
+          },{
+            "@type": "ListItem", 
+            "position": 3, 
+            "name": "Lab8",
+            "item": "https://kaydenla.com/projects/lab8/"  
+          }]
+        }
+        </script>
+
+  </body>
+</html>

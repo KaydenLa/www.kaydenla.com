@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="canonical" href="https://kaydenla.com/contact" />
+    <title>Contact Information | Kayden La</title>
+    <meta name="description" content="Official contact page for Kayden. Including E-mail, LinkedIn, and Github">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="container my-5">
+      <!-- Components -->
+      <section class="">
+        <h1 class="text-center"><strong>Contact Me</strong></h1>
+        <!--Subsection: card links -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">LinkedIn</h2>
+            <p class="card-text">
+              <p class="card-text">
+                <div class="text-center text-muted">
+                  <a href="https://www.linkedin.com/in/kayden-la-159a951a4/">
+                    <img src="https://kaydenla.com/assets/linkedin.ico" alt="LinkedIn Social Media" width="40" height="40">
+                  </a>
+                </div>
+              </p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">GitHub</h2>
+            <p class="card-text">
+              <div class="text-center text-muted">
+                <a href="https://github.com/KaydenLa">
+                  <img src="https://kaydenla.com/assets/github.png" alt="GitHub Social Media" width="40" height="40">
+                </a>
+              </div>
+            </p>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Email</h2>
+            <p class="card-text">
+              <div class="text-center text-muted">
+                <a href="mailto:kayden@kaydenla.com">kayden@kaydenla.com</a><br>
+                <a href="mailto:kayden@kaydenla.com">
+                  <img src="https://kaydenla.com/assets/favicon.ico" alt="Email: kayden@kaydenla.com" width="40" height="40">
+                </a>
+              </div>
+            </p>
+          </div>
+        </div>
+
+        </section>
+      <%- include('../partials/footer'); %>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Kayden La",
+        "url": "https://kaydenla.com/",
+        "image": "",
+        "sameAs": "https://www.linkedin.com/in/kayden-la-159a951a4/",
+        "jobTitle": "Tech Consultant",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Samsung Inc"
+        }  
+      }
+      </script>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [{
+            "@type": "ListItem", 
+            "position": 1, 
+            "name": "Kayden La",
+            "item": "https://kaydenla.com/"  
+          },{
+            "@type": "ListItem", 
+            "position": 2, 
+            "name": "Contact",
+            "item": "https://kaydenla.com/contact"  
+          }]
+        }
+        </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="canonical" href="https://kaydenla.com/resume" />
+    <title>Resume - Kayden La</title>
+    <meta name="description" content="Proffesional Resume. Work history, education, objective, and proffesional links are included.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+    <div class="container my-5">
+      <h1>Resume as of September, 2023</h1>
+      <!-- Components -->
+      <section class="">
+        <object data="https://kaydenla.com/assets/resume_blurred.pdf" type="application/pdf" width="100%" height="800px"> 
+          <iframe src="https://docs.google.com/viewer?embedded=true&url=https://kaydenla.com/assets/resume_blurred.pdf" style="width: 100%; height: 400px; border: none;"></iframe>
+          <!-- <p>It appears you don't have a PDF plugin for this browser.
+           No biggie... you can <a href="https://kaydenla.com/assets/resume_blurred.pdf">click here to
+          download the PDF file.</a></p>  -->
+        </object>
+        </section>
+      <%- include('../partials/footer'); %>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Kayden La",
+        "url": "https://kaydenla.com/",
+        "image": "",
+        "sameAs": "https://www.linkedin.com/in/kayden-la-159a951a4/",
+        "jobTitle": "Tech Consultant",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Samsung Inc"
+        }  
+      }
+      </script>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [{
+            "@type": "ListItem", 
+            "position": 1, 
+            "name": "Kayden La",
+            "item": "https://kaydenla.com/"  
+          },{
+            "@type": "ListItem", 
+            "position": 2, 
+            "name": "Resume",
+            "item": "https://kaydenla.com/resume"  
+          }]
+        }
+        </script>
+  </body>
+</html>

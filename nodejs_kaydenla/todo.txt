@@ -1,0 +1,12 @@
+Server Responsive images
+Scheme markup
+Optimize CSS (and/or find a CDN)
+Compress images
+Fix HTML validation erros
+-Add alt image text
+Connect a CDN to the DNS
+Add Meta description to document (does this tie into scheme?)
+Ensure CSP is effective against XSS attacks
+Eliminate render-blocking resources
+Image elements do not have explicit width and height
+-Avoid chaining critical requests

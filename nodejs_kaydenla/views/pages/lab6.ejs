@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+    <title>Lab6 - JQuery String Formatting</title>
+    <link rel="icon" href="https://kaydenla.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kaydenla.com/assets/secondary.css">
+    <meta name="description" content="This lab demonstrates the usage of JQuery on shorthand string formatting.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+  <div class="padding_container">
+    <div class="navbar">
+      <nav>
+        <ul id="menuList">
+          <li><a href="https://kaydenla.com/projects/lab5">Lab5</a></li>
+          <li><a href="https://kaydenla.com/projects/lab7">Lab7</a></li>
+        </ul>
+      </nav>
+      <img src="https://kaydenla.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+    </div>
+      <!-- Title -->
+      <h1>Lab6</h1>
+      <div class="center">
+        JQuery String Formatting
+      </div>
+
+      <!-- Paragraph-->
+      <div class="right margin_small">
+        &#8195;Welcome to Kayden's Lab 6. This lab demonstrates basic usage of JQuery.<br>
+        In essence, JQuery is a shorthand version of JavaScript.
+        The usage of JQuery results in the same use-cases and performance as using standalone JavaScript.
+        However, the big difference comes into play when considering code complexity.<br>
+        Performing simple actions with JavaScript can be time consuming and can be a lenghy process.
+        The usage of JQuery simplifies this process for developers- both those that create the code and also toward those that later edit the code.
+      </div>
+      <!-- Code - JQuery String formatting -->
+      <p>
+        Please enter the unformatted phone number:
+      </p>
+      <input type="text" id="user_input">
+      <button id="myButton">Click to Format</button>
+      <p id="phone_text1">
+        <b>Formated phone 1:</b>
+      </p>
+      <p class="margin_small" id=phone1>
+
+      </p>
+      <p id="phone_text2">
+        <b>Formated phone 2:</b>
+      </p>
+      <p class="margin_small" id=phone2>
+
+      </p>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $("#phone_text1").hide();
+        $("#phone_text2").hide();
+        $("#myButton").click(function(){
+          var myVar= $("#user_input").val();
+          var phone1 = "(" + myVar.substring(0, 3) + ") " + myVar.substring(3, 6) + "-" + myVar.substring(6, 10)
+          var phone2 = myVar.substring(0, 3) + "-" + myVar.substring(3, 6) + "-" + myVar.substring(6, 10)
+          $("#phone_text1").show();
+          $("#phone_text2").show();
+          $("#phone1").html(phone1);
+          $("#phone2").html(phone2);
+        });
+      });
+      </script>
+      <!--
+      <p id="jquryid">If you click on me, I will disappear.</p>
+      <p id=nothing>nothing</p>
+      <p id="computebutton"> Click me to compute</p>
+      <p id=jquryresults> results</p>
+
+<p>Click me away!</p>
+<p>Click me too!</p>
+      <script>
+$(document).ready(function(){
+  $("#computebutton").click(function(){
+    $("#jquryresults").replaceAll("hi");
+  });
+});
+</script>
+    -->
+
+
+      <!-- ===== Footer ===== -->
+      <%- include('../partials/footer'); %>
+      </div> <!-- End of padding -->
+
+    <!-- ===== Scripts ===== -->
+    <!-- Nav -->
+    <script src="https://kaydenla.com/assets/nav.js"></script>
+    <!-- Time  -->
+    <script src="https://kaydenla.com/assets/get_extension.js"></script>
+    <!-- Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://kaydenla.com/projects/lab6/"
+        },
+        "headline": "Lab6 - JQuery String Formatting",
+        "description": "A demonstration of JQuery usage on shorthand string formatting.",
+        "image": "",  
+        "author": {
+          "@type": "Person",
+          "name": "Kayden La",
+          "url": "https://kaydenla.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2022-10-27"
+      }
+      </script>
+            <!-- BreadCrumb -->
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org/", 
+                "@type": "BreadcrumbList", 
+                "itemListElement": [{
+                  "@type": "ListItem", 
+                  "position": 1, 
+                  "name": "Kayden La",
+                  "item": "https://kaydenla.com/"  
+                },{
+                  "@type": "ListItem", 
+                  "position": 2, 
+                  "name": "HTMLProjects",
+                  "item": "https://kaydenla.com/projects/"  
+                },{
+                  "@type": "ListItem", 
+                  "position": 3, 
+                  "name": "Lab6",
+                  "item": "https://kaydenla.com/projects/lab6/"  
+                }]
+              }
+              </script>
+      
+  </body>
+</html>

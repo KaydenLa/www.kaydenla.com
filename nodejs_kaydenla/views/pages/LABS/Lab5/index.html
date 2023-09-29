@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--Kayden La -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KL Lab 5</title>
+    <link rel="icon" href="https://kaydenla.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kaydenla.com/assets/secondary.css">
+  </head>
+  <body>
+    <div class="padding_container">
+      <!-- ===== Nav header ===== -->
+      <div class="navbar">
+        <nav>
+          <ul id="menuList">
+            <li><a href="https://kaydenla.com/">Home</a></li>
+            <li><a href="https://kaydenla.com/LABS/">Lab Directory</a></li>
+            <li><a href="https://kaydenla.com/LABS/Lab4/">Lab4</a></li>
+            <li><a href="https://kaydenla.com/LABS/Lab6">Lab6</a></li>
+          </ul>
+        </nav>
+        <img src="https://kaydenla.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+      <!-- Title -->
+      <h1>Lab5 · Kayden L</h1>
+      <div class="center">
+        Get File Extension
+      </div>
+
+      <!-- Paragraph-->
+      <div>
+        <div class="left">
+          &#8195;Welcome to Kayden’s Lab 5.
+          This lab demonstrates several basic concepts.
+          The basic concepts delivered here can be applied in many differing use-cases.
+          The code on this webpage asks the user to input the full name of a file (including the file extension)
+          and thus returns the file extension of the user's input.<br>
+          To achieve this, the user's input is indexed with the last position of a period, and anything coming after the period is accepted as a valid file extension.<br>
+          To minimize errors, get_extension.js has several error catching checks built in.<br><br>
+        </div>
+        <div class="right">
+          <h4>Basic Functionality</h4>
+          <p class="margin_small">
+            <b>1.</b> The user is proveded with an input box.<br>
+            <b>2.</b> User input is thus passed to a variable.<br>
+            <b>3.</b> The variable is thus capable of being iterated upon with JavaScript.<br>
+          </p>
+          <h4>Use-Cases</h4>
+          <p class="margin_small">
+            <b>1.</b> User input could be used for naming files, events, and any other namable object.<br>
+            <b>2.</b> Calculation and iteration is possible using the combination of the input box and JavaScript.<br>
+            <b>3.</b> User input could be used to perform search and indexing actions.<br>
+          </p>
+        </div>
+      </div>
+
+      <!-- Extension Getting -->
+      <div>
+          <!-- input box -->
+          <p class = "red">
+            <label for="user_input"><b>Write File Name:</b></label>
+            <input type="text" id="user_input" name="user_input"
+            onkeypress="get_extension_event(event)">
+          </p>
+
+          <!-- Button1 -->
+          <button type="button"
+          onclick="document.getElementById('extension').innerHTML = '<b>Output: </b>' + get_extension(1)">
+            Click me to get file extension
+          </button>
+          <br>
+
+          <!-- Output 1 -->
+          <p id="extension"></p>
+          <noscript>Your browser does not support JavaScript!<br><br></noscript>
+          or
+          <br>
+
+          <!-- Inpux file -->
+          <input type="file" id="myfile" name="myfile"><br>
+
+          <!-- Button2 -->
+          <button type="button"
+          onclick="document.getElementById('extension2').innerHTML = '<b>Output: </b>' + get_extension(2)">
+            Click me to get file extension
+          </button><br>
+
+          <!-- Output 2 -->
+          <p id="extension2"></p>
+          <noscript>Your browser does not support JavaScript!</noscript>
+      </div>
+
+      <!-- ===== Footer ===== -->
+      <footer class="py-5">
+        <div class="row">
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>
+              This page was made by Kayden La.<br>
+              <strong>© <script src="https://kaydenla.com/assets/year.js"></script> University of Houston</strong>.<br>
+              <a href="https://www.flaticon.com/free-icons/burger" title="burger icons">Burger icons created by Andy Horvath - Flaticon</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- End Padding -->
+
+    <!-- ===== Scripts ===== -->
+      <!-- Nav -->
+      <script src="https://kaydenla.com/assets/nav.js"></script>
+      <!-- get_extension -->
+      <script src="https://kaydenla.com/LABS/Lab5/get_extension.js"></script>
+
+  </body>
+</html>

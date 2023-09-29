@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--Kayden La -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KL Lab 8</title>
+    <link rel="icon" href="https://kala.heyuhnem.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kala.heyuhnem.com/assets/secondary.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="padding_container">
+      <!-- ===== Nav header ===== -->
+      <div class="t_banner navbar">
+        <div class="t_title1">
+          Lab8 · Kayden L - Computer Information Systems
+        </div>
+        <div class="t_title2" id="t_title2">
+          Lab8 · KL
+        </div>
+        <nav>
+          <ul id="menuList">
+            <li><a href="https://kala.heyuhnem.com/">Home</a></li>
+            <li><a href="https://kala.heyuhnem.com/LABS/">Lab Directory</a></li>
+            <li><a href="https://kala.heyuhnem.com/LABS/Lab7/">Lab7</a></li>
+            <li><a href="https://kala.heyuhnem.com/LABS/Lab9">Lab9</a></li>
+          </ul>
+        </nav>
+        <img src="https://kala.heyuhnem.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+      <!-- Title -->
+      <div class="center">
+        JQuery String Matching
+      </div>
+
+      <!-- Paragraph-->
+      <div class="right margin_small" style="background-color: #ffffdc;">
+        <h2>. . . Lab 8 Description</h2>
+              &#8195;Welcome to Kayden’s Lab 8.<br> This lab meets deliverables in the form of <i>Create/Change/ Password</i> page.
+              The password verification is done through the use of JavaScript string-matching.
+              To make the code easier to condensed, the script was written in JQuery.<br>
+              It is important to note that password verification is the deliverable here.
+              Password complexity requirements are added to enhance the deliverable.<br>
+              It is <b>heavily</b> noted that this is only the bare-bones form of a functioning page to set a password.
+              It is highly recommended that extra encryption be done on top of HTTPS encryption.
+              This is to prevent sniffers from accessing clear-text, assuming that they break through the session ID.<br>
+              <b>P.S.</b>The JQuery code and the HTML form code are slightly redundant.
+              This is to maximize compatiability for devices running without JavaScript support.
+      </div>
+    <!-- Delivertables: Lab 8  -->
+    <h2>Change Password</h2>
+    <div>
+      <form action="https://ron.viseh.com/CIS2336/MyNotes/Chapter05/process.php" method="post">
+        <input type="text" name="Username" placeholder="Username" id="Username" minlength="4" autofocus required><br><br>
+        <input type="password" name="Password" placeholder="Passworrd" id="password" minlength="6" required><br><br>
+        <input type="password" name="Password_verification" placeholder="Verify password" id="password_verification" required><br><br>
+        <button type="button" name="verify" class="btn btn-primary" id="verify_password">Verify Password</button>
+        <button type="submit" name="submit_form" id="submit_form">submit form</button>
+        <p class="margin_small form_error" id=password_status>No Script: password matching unable to run</p>
+      </form>
+    </div>
+
+      <!-- ===== Footer ===== -->
+      <footer class="py-5">
+        <div class="row">
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>
+              This page was made by Kayden La.<br>
+              <strong>© <script src="https://kala.heyuhnem.com/assets/year.js"></script> University of Houston</strong>.<br>
+              <a href="https://www.flaticon.com/free-icons/burger" title="burger icons">Burger icons created by Andy Horvath - Flaticon</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- End Padding -->
+
+    <!-- ===== Scripts ===== -->
+      <!-- JQuery CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <!-- Nav -->
+      <script src="https://kala.heyuhnem.com/assets/nav.js"></script>
+
+      <!-- Password / username verification | REQ: JQuery -->
+      <script src="https://kala.heyuhnem.com/assets/test.js"></script>
+  </body>
+</html>

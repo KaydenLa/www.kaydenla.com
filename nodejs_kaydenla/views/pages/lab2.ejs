@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+    <title>Lab2 - Map Embedding</title>
+    <link rel="icon" href="https://kaydenla.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kaydenla.com/assets/secondary.css">
+    <meta name="description" content="A page depicting the location for the College of Technology at the Universit of Houston.">
+  </head>
+  <body>
+    <%- include('../partials/header'); %>
+  <div class="padding_container">
+    <div class="navbar">
+      <nav>
+        <ul id="menuList">
+          <li><a href="https://kaydenla.com/projects/lab1">Lab1</a></li>
+          <li><a href="https://kaydenla.com/projects/lab3">Lab3</a></li>
+        </ul>
+      </nav>
+      <img src="https://kaydenla.com/assets/menu_1.png" alt="Menu" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <!-- ===== body ===== -->
+      <h1>Lab2</h1>
+      <div class="center">
+          COT Location
+      </div>
+      <p>
+        Attached is the location of the College of Technology- main Campus. This information is useful to COT students, as well as those looking into COT. Having an embedded map of the actual location is extremely useful to users.
+      </p>
+      <p>
+        &#8195;Firstly, this lets users know exactly where the COT building is. User’s will not be required to access external sites to get to the building. They will not be required to trust that external websites, such as Google Maps / Apple Maps, have correctly labeled the location of the COT building. <br>
+        &#8195;Secondly, this reduces the click time for user-interaction. Webpages need to be fast and efficient.   Every little inefficacy in a webpage detracts users substantially. Having an interactive map on the website itself makes users more inclined to stay on the website.
+      </p>
+
+      <!-- ===== Embeded Media ===== -->
+      <div class="mapResponsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6930.058042056732!2d-95.3405349!3d29.7189186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640be5bc606b521%3A0x77bd2a764531fab4!2s4230%20Martin%20Luther%20King%20Blvd%20%23300%2C%20Houston%2C%20TX%2077004!5e0!3m2!1sen!2sus!4v1663793097938!5m2!1sen!2sus" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    <!-- ===== Footer ===== -->
+    <%- include('../partials/footer'); %>
+    </div> <!-- End of padding -->
+
+  <!-- ===== Scripts ===== -->
+    <!-- Nav -->
+    <script src="https://kala.heyuhnem.com/assets/nav.js"></script>
+    <!-- Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://kaydenla.com/projects/lab2/"
+        },
+        "headline": "Lab2 - Map Embedding",
+        "description": "A page depicting the location for the College of Technology at the Universit of Houston.",
+        "image": "",  
+        "author": {
+          "@type": "Person",
+          "name": "Kayden La",
+          "url": "https://kaydenla.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2022-09-24"
+      }
+      </script>
+            <!-- BreadCrumb -->
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org/", 
+                "@type": "BreadcrumbList", 
+                "itemListElement": [{
+                  "@type": "ListItem", 
+                  "position": 1, 
+                  "name": "Kayden La",
+                  "item": "https://kaydenla.com/"  
+                },{
+                  "@type": "ListItem", 
+                  "position": 2, 
+                  "name": "HTMLProjects",
+                  "item": "https://kaydenla.com/projects/"  
+                },{
+                  "@type": "ListItem", 
+                  "position": 3, 
+                  "name": "Lab2",
+                  "item": "https://kaydenla.com/projects/lab2/"  
+                }]
+              }
+              </script>
+      
+</html>

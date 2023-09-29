@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    <title>Smart Switch</title>
+  </head>
+  <body>
+    <p>Smart Switch:</p>
+<button class="btn" data-href='https://kaydenla.com/assets/Smart_Switch_base.apk' onclick='forceDownload(this)'><i class="fa fa-download"></i> Download</button><br>
+<a href="path_to_file" download="proposed_file_name">Download</a><br><br>
+
+<a href="#" data-href='https://i.imgur.com/Mc12OXx.png' download="Image.jpg" onclick='forceDownload(this)'>Download Image</a>
+<script>
+  function forceDownload(link){
+    var url = link.getAttribute("data-href");
+    var fileName = link.getAttribute("download");
+    link.innerText = "Working...";
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.responseType = "blob";
+    xhr.onload = function(){
+        var urlCreator = window.URL || window.webkitURL;
+        var imageUrl = urlCreator.createObjectURL(this.response);
+        var tag = document.createElement('a');
+        tag.href = imageUrl;
+        tag.download = fileName;
+        document.body.appendChild(tag);
+        tag.click();
+        document.body.removeChild(tag);
+        link.innerText="Download Image";
+    }
+    xhr.send();
+}
+</script>
+  </body>
+</html>
