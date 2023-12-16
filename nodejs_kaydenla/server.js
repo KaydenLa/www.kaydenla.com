@@ -74,6 +74,11 @@ app.get('/achievements', function(req, res){
     res.render('pages/achievements', {})
 });
 
+// About Us
+app.get('/about-us', function(req, res){
+    res.render('pages/about-us', {})
+});
+
 // contact page
 app.get('/contact', function(req, res){
     res.render('pages/contact', {})
