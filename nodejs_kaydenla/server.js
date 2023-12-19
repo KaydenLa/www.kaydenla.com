@@ -15,71 +15,76 @@ app.set('view engine', 'ejs');
 
 // use res.render to load up an ejs view file
 
-// index page 
+// index page
 app.get('/', function(req, res){
     res.render('pages/home', {})
 });
 
-// TEST page  
+// TEST page
 app.get('/testpage', function(req, res){
     res.render('pages/testpage', {})
 });
-// TEST page  
+// TEST page
 app.get('/teamviewer', function(req, res){
     res.render('pages/teamviewer', {})
 });
 
-// resume page 
+// resume page
 app.get('/resume', function(req, res){
     res.render('pages/resume', {})
 });
 
-// htmlprojects page 
+// htmlprojects page
 app.get('/htmlprojects', function(req, res){
     res.render('pages/htmlprojects', {})
 });
 
-// projects page 
+// projects page
 app.get('/projects', function(req, res){
     res.render('pages/projects', {})
 });
 
-// Common Ports 
+// Common Ports
 app.get('/common-ports', function(req, res){
     res.render('pages/common-ports', {})
 });
 
-// A, B, C Subnet Reference Table 
+// A, B, C Subnet Reference Table
 app.get('/subnet-classes', function(req, res){
     res.render('pages/subnetclasses', {})
 });
 
-// Display Types 
+// Display Types
 app.get('/display-types', function(req, res){
     res.render('pages/display-types', {})
 });
 
-// IEEE Standards 
+// IEEE Standards
 app.get('/ieee-standards', function(req, res){
     res.render('pages/ieee-standards', {})
 });
 
-// 3D Models 
+// 3D Models
 app.get('/models', function(req, res){
     res.render('pages/models', {})
 });
 
-// achievements page 
+// achievements page
 app.get('/achievements', function(req, res){
     res.render('pages/achievements', {})
 });
 
-// contact page 
+// About Us
+app.get('/about-us', function(req, res){
+    res.render('pages/about-us', {})
+});
+
+// contact page
 app.get('/contact', function(req, res){
     res.render('pages/contact', {})
 });
 
-// bedframe 
+// bedframe
 app.get('/bedframe', function(req, res){
     res.render('pages/bedframe', {})
 });
@@ -135,6 +140,9 @@ app.get('/uploads', function(req, res){
 });
 app.get('/gallery', function(req, res){
     res.render('pages/gallery', {})
+});
+app.get('/link-preview-test3', function(req, res){
+    res.render('pages/link-preview-test', {})
 });
 app.get('/404', function(req, res){
     res.render('pages/error', {})
